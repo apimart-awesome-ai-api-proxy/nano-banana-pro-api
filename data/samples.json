@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "01-product-hero-perfume",
+    "prompt": "Studio hero shot of a frosted glass perfume bottle on a wet black stone slab, single softbox from the left, faint mist, deep charcoal background, crisp label text, commercial product photography",
+    "category": "Product / e-commerce",
+    "size": "1:1",
+    "resolution": "1K",
+    "model": "gemini-3-pro-image-preview",
+    "cost": 0.03
+  },
+  {
+    "slug": "03-cinematic-street-rain",
+    "prompt": "Rain soaked Kyoto alley at night, paper lantern reflections on wet stone, a lone figure with a transparent umbrella walking away, cinematic 35mm still, shallow depth of field, film grain",
+    "category": "Cinematic still",
+    "size": "16:9",
+    "resolution": "1K",
+    "model": "gemini-3-pro-image-preview",
+    "cost": 0.03
+  },
+  {
+    "slug": "02-food-overhead-ramen",
+    "prompt": "Overhead flat lay of a spicy miso ramen bowl with soft boiled egg, nori and scallions, dark ceramic table, chopsticks resting on the rim, natural window light, editorial food photography",
+    "category": "Food photography",
+    "size": "4:3",
+    "resolution": "1K",
+    "model": "gemini-3-pro-image-preview",
+    "cost": 0.03
+  },
+  {
+    "slug": "04-architectural-dusk",
+    "prompt": "Minimalist concrete villa on a cliff at dusk, warm interior light, infinity pool reflecting a violet sky, architectural photography, 24mm perspective, ultra sharp",
+    "category": "Architecture",
+    "size": "16:9",
+    "resolution": "1K",
+    "model": "gemini-3-pro-image-preview",
+    "cost": 0.03
+  },
+  {
+    "slug": "06-illustration-layered-paper",
+    "prompt": "Layered paper cut illustration of a mountain lake at sunrise, five depth layers, soft pastel palette, subtle drop shadows, art print composition, clean vector edges",
+    "category": "Illustration",
+    "size": "1:1",
+    "resolution": "1K",
+    "model": "gemini-3-pro-image-preview",
+    "cost": 0.03
+  },
+  {
+    "slug": "05-fashion-editorial-studio",
+    "prompt": "Editorial fashion portrait of a model in an oversized ivory wool coat, seamless light grey studio backdrop, crisp high key lighting, medium format detail, calm expression",
+    "category": "Fashion portrait",
+    "size": "3:4",
+    "resolution": "1K",
+    "model": "gemini-3-pro-image-preview",
+    "cost": 0.03
+  },
+  {
+    "slug": "08-macro-botanical-detail",
+    "prompt": "Macro photograph of a dew covered dandelion seed head against deep black background, focus stacked detail, iridescent droplets, studio lighting",
+    "category": "Macro nature",
+    "size": "3:2",
+    "resolution": "1K",
+    "model": "gemini-3-pro-image-preview",
+    "cost": 0.03
+  },
+  {
+    "slug": "07-infographic-dashboard",
+    "prompt": "Flat vector dashboard panel showing three gauge dials and abstract latency curves, muted blue and sand palette, generous white space, crisp geometric cards, no placeholder text",
+    "category": "Design / UI",
+    "size": "16:9",
+    "resolution": "1K",
+    "model": "gemini-3-pro-image-preview",
+    "cost": 0.03
+  }
+]
