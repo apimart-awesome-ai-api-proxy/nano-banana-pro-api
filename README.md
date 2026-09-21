@@ -43,19 +43,6 @@ Result links are valid for 24 hours.
 | default | $0.0375 | $0.03 |
 | 4K | $0.05 | $0.04 |
 
-<!-- conv-kit:v1:scale -->
-### What that costs at scale
-
-| Spend | Cost |
-| --- | --- |
-| 100 images | $3.00 |
-| 1000 images | $30.00 |
-| 10000 images | $300.00 |
-
-Linear at the observed per-unit rate, no volume discount assumed. Snapshot 2026-09-17; re-check the live table before committing a budget.
-<!-- /conv-kit:v1:scale -->
-
-
 The token-billed official route bills per million tokens instead: `text_input` $1.60, `cached_text_input` free, `image_input` $1.60, `cached_image_input` free, `text_output` $9.60, `image_output` $96.00.
 <!-- pricing:model:end -->
 
