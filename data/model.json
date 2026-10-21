@@ -3,15 +3,15 @@
   "alias": "nano-banana-pro-ext",
   "official": "gemini-3-pro-image-preview-official",
   "source": "https://apimart.ai/en/pricing",
-  "extracted_at": "2026-10-20T11:39:38Z",
+  "extracted_at": "2026-10-21T11:51:33Z",
   "prices": {
     "default": {
       "list": 0.0375,
-      "effective": 0.03
+      "effective": 0.02
     },
     "4K": {
       "list": 0.05,
-      "effective": 0.04
+      "effective": 0.03
     }
   },
   "official_prices": {
