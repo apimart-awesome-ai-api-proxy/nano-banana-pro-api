@@ -26,6 +26,21 @@ def generate(prompt: str, size: str = "1:1", resolution: str = "1K",
     raise TimeoutError(task_id)
 
 
+def download_images(task: dict, output: pathlib.Path) -> list[pathlib.Path]:
+    output.mkdir(parents=True, exist_ok=True)
+    saved = []
+    for image in task.get("result", {}).get("images", []):
+        url = image.get("url")
+        if not url:
+            continue
+        response = requests.get(url, timeout=120)
+        response.raise_for_status()
+        dest = output / url.rsplit("/", 1)[-1]
+        dest.write_bytes(response.content)
+        saved.append(dest)
+    return saved
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="Nano Banana Pro image generation")
     ap.add_argument("--prompt", default="A bamboo forest path under moonlight")
@@ -37,8 +52,5 @@ if __name__ == "__main__":
 
     task = generate(args.prompt, args.size, args.resolution, args.reference)
     print(f"status={task['status']} cost={task.get('cost')} credits={task.get('credits_cost')}")
-    pathlib.Path(args.out).mkdir(parents=True, exist_ok=True)
-    for url in (task.get("result", {}).get("images", [{}])[0].get("url") or []):
-        dest = pathlib.Path(args.out) / url.rsplit("/", 1)[-1]
-        dest.write_bytes(requests.get(url, timeout=120).content)
+    for dest in download_images(task, pathlib.Path(args.out)):
         print("saved", dest)
