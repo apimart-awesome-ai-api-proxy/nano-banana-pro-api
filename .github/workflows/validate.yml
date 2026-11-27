@@ -15,7 +15,9 @@ jobs:
           python-version: "3.12"
       - name: Attribution and pricing data check
         run: python tools/check_links.py
-      - name: Smoke-test the calculator
+      - name: Check examples offline (no API calls)
         run: |
-          python examples/cost_calculator.py image --model gpt-image-2.5-ext --resolution 1K --count 100
-          python examples/cost_calculator.py tokens --model gpt-5.5 --input-tokens 1000000 --output-tokens 100000
+          python -m unittest discover -s tests -v
+          python -m py_compile examples/python_generate.py tools/check_links.py tools/snapshot.py
+          node --check examples/javascript.mjs
+          bash -n examples/curl.sh
